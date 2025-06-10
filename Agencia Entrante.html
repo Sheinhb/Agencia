@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <meta charset="utf8mb4">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Agencia Shein. La mejor opcion">
+  <title>Centro Saturno</title>
+
+  <link rel="icon" href="Logo_saturno.gif">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="stylesheet" crossorigin="" href="index-CfybQhfR.css">
+
+  <style type="text/css">
+    .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+    }
+    .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+    }
+    .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+    }
+    .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .rfm-overlay::before,
+    .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+    }
+    .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+    .rfm-overlay::before {
+      left: 0;
+      top: 0;
+    }
+    .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+    .rfm-child {
+      transform: var(--transform);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root">
+    <div class="vh-100 justify-content-center d-flex align-items-center text-center bg-negro">
+      <div class="row">
+        <div class="col">
+          <h1 class="t-p fade in">Centro Saturno</h1>
+          <img class="fade in" src="Logo_saturno.gif" alt="" width="30%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redirección después de 3 segundos -->
+  <script>
+    setTimeout(function () {
+      window.location.href = "Inicio.html";
+    }, 3000); // 3 segundos
+  </script>
+
+</body>
+</html>

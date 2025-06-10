@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Agenda Shein</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-8">
+    <h2 class="text-2xl font-bold text-center text-blue-600">¡Crea tu cuenta!</h2>
+    <p class="text-center text-gray-500 mb-6">Llena los campos para registrarte</p>
+
+    <form action="registro.php" method="POST" class="space-y-4">
+      <div>
+        <label class="block text-gray-700">Nombre completo</label>
+        <input type="text" name="nombre" required class="w-full px-4 py-2 border rounded-lg">
+      </div>
+
+      <div>
+        <label class="block text-gray-700">Email</label>
+        <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg">
+      </div>
+
+      <div>
+        <label class="block text-gray-700">Usuario</label>
+        <input type="text" name="usuario" required class="w-full px-4 py-2 border rounded-lg">
+      </div>
+
+      <div>
+        <label class="block text-gray-700">Contraseña</label>
+        <input type="password" name="password" required class="w-full px-4 py-2 border rounded-lg">
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+        Registrarse
+      </button>
+    </form>
+
+    <p class="text-center text-sm text-gray-600 mt-4">
+      ¿Ya tienes una cuenta? <a href="login.html" class="text-blue-600 hover:underline">Inicia sesión</a>
+    </p>
+  </div>
+
+</body>
+</html>

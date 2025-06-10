@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inicio</title>
+</head>
+<body>
+  <h1>Escribe una palabra</h1>
+  <input type="text" id="palabra" placeholder="Escribe aquí..." />
+  <button onclick="guardarPalabra()">Guardar</button>
+  <script>
+    function guardarPalabra() {
+      const palabra = document.getElementById('palabra').value;
+      localStorage.setItem('palabraCompartida', palabra);
+      alert('Palabra guardada');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    html.movil body {
+      max-width: 375px;
+      margin: auto;
+      background-color: #f0f2f5;
+    }
+
+    html.ordenador body {
+      max-width: 100%;
+      background-color: #f5f6fa;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      padding: 2rem;
+    }
+
+    .login-header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem;
+      border-radius: 12px 12px 0 0;
+      text-align: center;
+      margin: -2rem -2rem 1.5rem -2rem;
+    }
+
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .actions a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.7rem;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      color: #666;
+    }
+
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  </style>
+  <script>
+    // Aplica clase al <html> según la selección almacenada
+    const modo = localStorage.getItem('modoVista');
+    if (modo === 'movil' || modo === 'ordenador') {
+      document.documentElement.classList.add(modo);
+    }
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h2>¡Bienvenido de nuevo!</h2>
+      <p>Ingresa tus credenciales para continuar</p>
+    </div>
+
+    <form>
+      <label for="usuario">Usuario</label>
+      <input type="text" id="usuario" placeholder="Ingresa tu usuario">
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Ingresa tu contraseña">
+
+      <div class="actions">
+        <label><input type="checkbox"> Recordar sesión</label>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </div>
+
+      <button class="btn" type="submit">Iniciar Sesión</button>
+    </form>
+
+    <div class="footer">
+      ¿No tienes una cuenta? <a href="#">Regístrate</a><br>
+      <a href="Inicio.html">← Volver al inicio</a>
+    </div>
+
+    <div class="copyright">
+      © 2025 Agencia Shein. Todos los derechos reservados para Ing. Medina
+    </div>
+  </div>
+</body>
+</html>
